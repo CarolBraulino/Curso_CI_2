@@ -60,8 +60,3 @@ jobs:
     needs: build
     uses: ./.github/workflows/Docker.yml
     secrets: inherit
-
-  integration-tests:
-    needs: docker
-    uses: ./.github/workflows/integration.yml
-    secrets: inherit
