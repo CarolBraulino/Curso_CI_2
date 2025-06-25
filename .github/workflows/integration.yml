@@ -1,13 +1,10 @@
 name: Integration Test
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
+  workflow_call:
 
 jobs:
-  test:
+  Docker-compose:
     runs-on: ubuntu-latest
 
     steps:
